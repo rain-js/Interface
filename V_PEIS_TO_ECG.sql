@@ -3,7 +3,7 @@ select 'TJ'+convert(varchar,LSH) as ApplyCode,
 	'T'+convert(varchar,grbh) as FKey,
 	'' as RepCode,
 	'TJ'+convert(varchar,grtjbh) as MedicareCode,
-	'' as ClinicCode,
+	'TJ|'+convert(varchar,grtjbh)+'|'+convert(varchar,zhxmbh) as ClinicCode,	-- TJ|体检编号|组合项目编号
 	'' as HospCode,
 	3 as ReportProp,
 	xm as PatName,
